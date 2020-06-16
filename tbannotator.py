@@ -380,6 +380,7 @@ class TBannotator:
                 self._blastn = list(filter(lambda x:x.startswith('makeblastdb'), os.listdir()))[0]
             elif self._linux_or_mac:
                 self._makebastdb = './'+makeblastdb        
+                self._blastn = list(filter(lambda x:x.startswith('blastn'), os.listdir()))[0]
                 self._blastn = './'+self._blastn
         elif distutils.spawn.find_executable("makeblastdb.exe") != None:
             self._logger.warning('makeblastdb found in system directory')
