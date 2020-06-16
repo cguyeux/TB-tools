@@ -1,0 +1,414 @@
+lin	pos	fst	gene_pos	ref_nt	alt_nt	cod_num	ref_cod	alt_cod	ref_aa	alt_aa	rv	gene	tags	genefunc	essential
+lineage1	137233	1	945	C	T	315	GCC	GCT	A	A	Rv0112	gca	syn	cell wall and cell processes	essential
+lineage1	485230	1	1254	C	T	418	CAC	CAT	H	H	Rv0404	fadD30	syn	lipid metabolism	essential
+lineage1	615938	1	1104	G	A	368	GAG	GAA	E	E	Rv0524	hemL	syn	intermediary metabolism and respiration	essential
+lineage1	649345	1	810	C	T	270	GCC	GCT	A	A	Rv0557	mgtA	syn	lipid metabolism	essential
+lineage1	811492	1	120	C	G	40	GTC	GTG	V	V	Rv0714	rplN	syn	information pathways	essential
+lineage1	865761	1	1176	C	T	392	CAC	CAT	H	H	Rv0772	purD	syn	intermediary metabolism and respiration	essential
+lineage1	1119739	1	201	C	T	67	CTG	CTA	L	L	Rv1002c	.	syn	cell wall and cell processes	essential
+lineage1	1320508	1	474	G	A	158	GTG	GTA	V	V	Rv1182	papA3	syn	lipid metabolism	essential
+lineage1	1590555	1	159	C	T	53	ACC	ACT	T	T	Rv1415	ribA2	syn	intermediary metabolism and respiration	essential
+lineage1	2696977	1	738	G	C	246	GCC	GCG	A	A	Rv2400c	subI	syn	cell wall and cell processes	essential
+lineage1	3274545	1	474	G	A	158	CTG	CTA	L	L	Rv2938	drrC	syn	cell wall and cell processes	essential
+lineage1	3424462	1	966	C	T	322	CTG	CTA	L	L	Rv3061c	fadE22	syn	lipid metabolism	essential
+lineage1	3913737	1	798	G	A	266	GCC	GCT	A	A	Rv3495c	lprN	syn	cell wall and cell processes	essential
+lineage1	3920109	1	753	G	T	251	ATC	ATA	I	I	Rv3501c	yrbE4A	syn	virulence, detoxification, adaptation	essential
+lineage1	3984926	1	520	G	A	174	CTG	TTG	L	L	Rv3545c	cyp125	syn	intermediary metabolism and respiration	essential
+lineage1.1	2989683	1	393	C	T	131	GCC	GCT	A	A	Rv2673	aftC	syn	cell wall and cell processes	essential
+lineage1.1	4054364	1	333	C	T	111	CTG	CTA	L	L	Rv3614c	espD	syn	cell wall and cell processes	essential
+lineage1.1	4404247	1	1056	G	A	352	CTG	CTA	L	L	Rv3915	.	syn	intermediary metabolism and respiration	essential
+lineage1.1.1	1261056	1	291	C	T	97	GGG	GGA	G	G	Rv1133c	metE	syn	intermediary metabolism and respiration	essential
+lineage1.1.1	1924765	1	937	T	C	313	TTA	CTA	L	L	Rv1699	pyrG	syn	intermediary metabolism and respiration	essential
+lineage1.1.1	2078024	1	2148	G	A	716	CCG	CCA	P	P	Rv1832	gcvB	syn	intermediary metabolism and respiration	essential
+lineage1.1.1	3021283	1	711	G	A	237	CGG	CGA	R	R	Rv2707	.	syn	conserved hypotheticals	essential
+lineage1.1.1.1	259689	1	777	G	A	259	GCG	GCA	A	A	Rv0216	.	syn	intermediary metabolism and respiration	essential
+lineage1.1.1.1	647833	1	1536	T	G	512	TCT	TCG	S	S	Rv0555	menD	syn	intermediary metabolism and respiration	essential
+lineage1.1.1.1	896629	1	810	C	T	270	TAC	TAT	Y	Y	Rv0803	purL	syn	intermediary metabolism and respiration	essential
+lineage1.1.1.1	1337545	1	969	A	G	323	GCT	GCC	A	A	Rv1194c	.	syn	conserved hypotheticals	essential
+lineage1.1.1.1	1750465	1	2772	T	C	924	CTT	CTC	L	L	Rv1547	dnaE1	syn	information pathways	essential
+lineage1.1.1.1	1883443	1	1740	C	T	580	GCC	GCT	A	A	Rv1662	pks8	syn	lipid metabolism	essential
+lineage1.1.1.1	2073614	1	534	C	T	178	TAC	TAT	Y	Y	Rv1828	.	syn	conserved hypotheticals	essential
+lineage1.1.1.1	2412584	1	768	G	A	256	GCC	GCT	A	A	Rv2153c	murG	syn	cell wall and cell processes	essential
+lineage1.1.1.1	2694026	1	939	C	T	313	CTG	CTA	L	L	Rv2397c	cysA1	syn	cell wall and cell processes	essential
+lineage1.1.1.1	3022811	1	351	G	A	117	CAG	CAA	Q	Q	Rv2710	sigB	syn	information pathways	essential
+lineage1.1.1.1	3216553	1	339	G	A	113	GTC	GTT	V	V	Rv2907c	rimM	syn	information pathways	essential
+lineage1.1.1.1	3722271	1	330	C	T	110	CTG	CTA	L	L	Rv3335c	.	syn	cell wall and cell processes	essential
+lineage1.1.1.1	4102929	1	750	G	A	250	ACC	ACT	T	T	Rv3663c	dppD	syn	cell wall and cell processes	essential
+lineage1.1.1.1	4106239	1	846	G	A	282	GAC	GAT	D	D	Rv3666c	dppA	syn	cell wall and cell processes	essential
+lineage1.1.2	6124	1	885	C	T	295	GCC	GCT	A	A	Rv0005	gyrB	syn	information pathways	essential
+lineage1.1.2	199859	1	1326	C	A	442	GTC	GTA	V	V	Rv0169	mce1A	syn	virulence, detoxification, adaptation	essential
+lineage1.1.2	1831531	1	867	G	A	289	CTG	CTA	L	L	Rv1629	polA	syn	information pathways	essential
+lineage1.1.2	2622402	1	51	G	A	17	GCC	GCT	A	A	Rv2343c	dnaG	syn	information pathways	essential
+lineage1.1.2	2789661	1	1362	C	A	454	CCG	CCT	P	P	Rv2483c	plsC	syn	lipid metabolism	essential
+lineage1.1.2	4157259	1	279	G	A	93	GTG	GTA	V	V	Rv3712	.	syn	intermediary metabolism and respiration	essential
+lineage1.1.3	1491275	1	1038	G	A	346	CAC	CAT	H	H	Rv1326c	glgB	syn	intermediary metabolism and respiration	essential
+lineage1.2.1	1136017	1	465	A	G	155	GGT	GGC	G	G	Rv1017c	prsA	syn	intermediary metabolism and respiration	essential
+lineage1.2.1	3479545	1	375	C	A	125	GCC	GCA	A	A	Rv3111	moaC1	syn	intermediary metabolism and respiration	essential
+lineage1.2.1	4049254	1	727	G	A	243	CTG	TTG	L	L	Rv3608c	folP1	syn	intermediary metabolism and respiration	essential
+lineage1.2.2	617729	1	237	G	A	79	GGG	GGA	G	G	Rv0527	ccdA	syn	intermediary metabolism and respiration	essential
+lineage1.2.2	3052353	1	837	G	A	279	GCC	GCT	A	A	Rv2739c	.	syn	intermediary metabolism and respiration	essential
+lineage1.2.2	3470377	1	303	C	T	101	CAG	CAA	Q	Q	Rv3101c	ftsX	syn	cell wall and cell processes	essential
+lineage1.2.2	4238120	1	189	G	A	63	CAG	CAA	Q	Q	Rv3792	aftA	syn	cell wall and cell processes	essential
+lineage2	497491	1	810	G	A	270	GAC	GAT	D	D	Rv0411c	glnH	syn	cell wall and cell processes	essential
+lineage2	811753	1	12	C	T	4	CAC	CAT	H	H	Rv0715	rplX	syn	information pathways	essential
+lineage2	1834177	1	636	A	C	212	CGA	CGC	R	R	Rv1630	rpsA	syn	information pathways	essential
+lineage2	2543395	1	882	T	C	294	GAA	GAG	E	E	Rv2268c	cyp128	syn	intermediary metabolism and respiration	essential
+lineage2	2789798	1	1225	G	T	409	CGG	AGG	R	R	Rv2483c	plsC	syn	lipid metabolism	essential
+lineage2	4254431	1	1518	G	A	506	GAC	GAT	D	D	Rv3799c	accD4	syn	lipid metabolism	essential
+lineage2.1	648465	1	507	A	G	169	GCA	GCG	A	A	Rv0556	.	syn	cell wall and cell processes	essential
+lineage2.1	1135798	1	684	C	T	228	CTG	CTA	L	L	Rv1017c	prsA	syn	intermediary metabolism and respiration	essential
+lineage2.1	1220034	1	153	C	T	51	GAG	GAA	E	E	Rv1092c	coaA	syn	intermediary metabolism and respiration	essential
+lineage2.1	1878222	1	2919	G	C	973	CTG	CTC	L	L	Rv1661	pks7	syn	lipid metabolism	essential
+lineage2.1	1881090	1	5787	C	T	1929	GGC	GGT	G	G	Rv1661	pks7	syn	lipid metabolism	essential
+lineage2.1	3537016	1	915	G	A	305	GTG	GTA	V	V	Rv3168	.	syn	virulence, detoxification, adaptation	essential
+lineage2.1	4004893	1	603	G	A	201	GGG	GGA	G	G	Rv3563	fadE32	syn	lipid metabolism	essential
+lineage2.1	4074482	1	849	C	T	283	CCC	CCT	P	P	Rv3635	.	syn	cell wall and cell processes	essential
+lineage2.1	4090667	1	1887	G	A	629	TTG	TTA	L	L	Rv3649	.	syn	information pathways	essential
+lineage2.1	4165481	1	1251	G	C	417	CCC	CCG	P	P	Rv3721c	dnaZX	syn	information pathways	essential
+lineage2.1	4246088	1	2856	A	G	952	CAA	CAG	Q	Q	Rv3794	embA	syn	cell wall and cell processes	essential
+lineage2.1	4345707	1	669	C	T	223	GCC	GCT	A	A	Rv3869	eccB1	syn	cell wall and cell processes	essential
+lineage2.2	1849051	1	2985	C	T	995	CCG	CCA	P	P	Rv1640c	lysX	syn	information pathways	essential
+lineage2.2	2505085	1	615	G	A	205	GCC	GCT	A	A	Rv2231c	cobC	syn	intermediary metabolism and respiration	essential
+lineage2.2	2775361	1	90	C	T	30	CGC	CGT	R	R	Rv2472	.	syn	conserved hypotheticals	essential
+lineage2.2	3477942	1	294	A	G	98	ACA	ACG	T	T	Rv3109	moaA1	syn	intermediary metabolism and respiration	essential
+lineage2.2	3587446	1	94	G	A	32	CTG	TTG	L	L	Rv3210c	.	syn	conserved hypotheticals	essential
+lineage2.2.1	797736	1	804	C	T	268	CTC	CTT	L	L	Rv0697	.	syn	intermediary metabolism and respiration	essential
+lineage2.2.1	3498198	1	1068	C	T	356	GAG	GAA	E	E	Rv3132c	devS	syn	regulatory proteins	essential
+lineage2.2.1.1	4248115	1	1602	C	T	534	GAC	GAT	D	D	Rv3795	embB	syn	cell wall and cell processes	essential
+lineage2.2.1.2	3836274	1	618	G	A	206	TTC	TTT	F	F	Rv3417c	groEL1	syn	virulence, detoxification, adaptation	essential
+lineage2.2.2	15890	1	1581	G	A	527	AGC	AGT	S	S	Rv0014c	pknB	syn	regulatory proteins	essential
+lineage2.2.2	154990	1	759	G	T	253	CGG	CGT	R	R	Rv0127	mak	syn	virulence, detoxification, adaptation	essential
+lineage2.2.2	346693	1	1059	G	T	353	TCG	TCT	S	S	Rv0284	eccC3	syn	cell wall and cell processes	essential
+lineage2.2.2	449194	1	192	G	A	64	GGC	GGT	G	G	Rv0372c	.	syn	conserved hypotheticals	essential
+lineage2.2.2	1565566	1	126	C	T	42	CCC	CCT	P	P	Rv1391	dfp	syn	intermediary metabolism and respiration	essential
+lineage2.2.2	2640807	1	258	G	A	86	GTC	GTT	V	V	Rv2357c	glyS	syn	information pathways	essential
+lineage3	301341	1	315	C	A	105	CCG	CCT	P	P	Rv0249c	.	syn	intermediary metabolism and respiration	essential
+lineage3	342873	1	744	C	T	248	GTC	GTT	V	V	Rv0282	eccA3	syn	cell wall and cell processes	essential
+lineage3	652950	1	180	T	C	60	CGT	CGC	R	R	Rv0562	grcC1	syn	intermediary metabolism and respiration	essential
+lineage3	1812448	1	90	C	T	30	TAC	TAT	Y	Y	Rv1613	trpA	syn	intermediary metabolism and respiration	essential
+lineage3	2782498	1	1545	G	A	515	GAC	GAT	D	D	Rv2477c	.	syn	cell wall and cell processes	essential
+lineage3	2941179	1	18	G	A	6	CGC	CGT	R	R	Rv2613c	.	syn	lipid metabolism	essential
+lineage3	3165807	1	603	G	A	201	GTG	GTA	V	V	Rv2855	mtr	syn	intermediary metabolism and respiration	essential
+lineage3	3273107	1	894	C	A	298	GCC	GCA	A	A	Rv2936	drrA	syn	cell wall and cell processes	essential
+lineage3	3918649	1	552	T	C	184	GGA	GGG	G	G	Rv3499c	mce4A	syn	virulence, detoxification, adaptation	essential
+lineage3.1.1	1084911	1	840	G	A	280	TAC	TAT	Y	Y	Rv0973c	accA2	syn	lipid metabolism	essential
+lineage3.1.1	1591545	1	1149	G	T	383	CCG	CCT	P	P	Rv1415	ribA2	syn	intermediary metabolism and respiration	essential
+lineage3.1.1	1653374	1	144	G	C	48	GGG	GGC	G	G	Rv1466	.	syn	conserved hypotheticals	essential
+lineage3.1.2	1914217	1	616	C	A	206	CGG	AGG	R	R	Rv1689	tyrS	syn	information pathways	essential
+lineage3.1.2	3722702	1	930	G	C	310	CTC	CTG	L	L	Rv3336c	trpS	syn	information pathways	essential
+lineage3.1.2.1	1132890	1	1266	C	T	422	GGC	GGT	G	G	Rv1013	pks16	syn	lipid metabolism	essential
+lineage3.1.2.1	1237818	1	375	C	G	125	CTG	CTC	L	L	Rv1111c	.	syn	conserved hypotheticals	essential
+lineage3.1.2.2	44689	1	1128	C	T	376	GGC	GGT	G	G	Rv0041	leuS	syn	information pathways	essential
+lineage3.1.2.2	343092	1	963	C	T	321	TTC	TTT	F	F	Rv0282	eccA3	syn	cell wall and cell processes	essential
+lineage3.1.2.2	346898	1	1264	C	T	422	CTG	TTG	L	L	Rv0284	eccC3	syn	cell wall and cell processes	essential
+lineage3.1.2.2	1862121	1	2364	C	T	788	CAC	CAT	H	H	Rv1650	pheT	syn	information pathways	essential
+lineage3.1.2.2	1887720	1	1209	C	T	403	GCC	GCT	A	A	Rv1663	pks17	syn	lipid metabolism	essential
+lineage3.1.2.2	1942808	1	150	C	T	50	GCC	GCT	A	A	Rv1715	fadB3	syn	lipid metabolism	essential
+lineage3.1.2.2	1956700	1	546	C	T	182	GTG	GTA	V	V	Rv1730c	.	syn	cell wall and cell processes	essential
+lineage3.1.2.2	2415042	1	1353	G	T	451	CCC	CCA	P	P	Rv2155c	murD	syn	cell wall and cell processes	essential
+lineage3.1.2.2	2874344	1	2142	G	A	714	CGC	CGT	R	R	Rv2555c	alaS	syn	information pathways	essential
+lineage3.1.2.2	3013911	1	237	C	T	79	CCG	CCA	P	P	Rv2697c	dut	syn	intermediary metabolism and respiration	essential
+lineage3.1.2.2	3119018	1	795	C	G	265	GCC	GCG	A	A	Rv2813	.	syn	conserved hypotheticals	essential
+lineage3.1.2.2	3360521	1	66	G	A	22	TAC	TAT	Y	Y	Rv3001c	ilvC	syn	intermediary metabolism and respiration	essential
+lineage3.1.2.2	3629291	1	357	A	G	119	GGT	GGC	G	G	Rv3248c	sahH	syn	intermediary metabolism and respiration	essential
+lineage3.1.2.2	3903683	1	606	C	G	202	GCC	GCG	A	A	Rv3484	cpsA	syn	conserved hypotheticals	essential
+lineage3.1.2.2	4016543	1	60	C	A	20	CGC	CGA	R	R	Rv3574	kstR	syn	regulatory proteins	essential
+lineage3.1.2.2	4406399	1	93	C	T	31	CCG	CCA	P	P	Rv3917c	parB	syn	cell wall and cell processes	essential
+lineage4	325505	1	939	T	C	313	GTT	GTC	V	V	Rv0270	fadD2	syn	lipid metabolism	nonessential
+lineage4	599868	1	2670	A	G	890	CGA	CGG	R	R	Rv0507	mmpL2	syn	cell wall and cell processes	nonessential
+lineage4	931123	1	171	T	C	57	TAT	TAC	Y	Y	Rv0835	lpqQ	syn	cell wall and cell processes	nonessential
+lineage4.1	62657	1	2262	G	A	754	CCG	CCA	P	P	Rv0058	dnaB	syn	information pathways	essential
+lineage4.1.1	514245	1	1077	C	T	359	GTG	GTA	V	V	Rv0425c	ctpH	syn	cell wall and cell processes	essential
+lineage4.1.1	1553633	1	402	T	C	134	GGT	GGC	G	G	Rv1380	pyrB	syn	intermediary metabolism and respiration	essential
+lineage4.1.1.1	201123	1	192	A	C	64	GGA	GGC	G	G	Rv0171	mce1C	syn	virulence, detoxification, adaptation	essential
+lineage4.1.1.1	1719679	1	954	T	C	318	CAT	CAC	H	H	Rv1524	.	syn	intermediary metabolism and respiration	essential
+lineage4.1.1.1	1850119	1	1917	C	T	639	ACG	ACA	T	T	Rv1640c	lysX	syn	information pathways	essential
+lineage4.1.1.1	2369664	1	66	C	T	22	AAG	AAA	K	K	Rv2109c	prcA	syn	intermediary metabolism and respiration	essential
+lineage4.1.1.1	3909681	1	1446	C	T	482	CGC	CGT	R	R	Rv3490	otsA	syn	virulence, detoxification, adaptation	essential
+lineage4.1.1.1	4240897	1	1035	C	G	345	CGC	CGG	R	R	Rv3793	embC	syn	cell wall and cell processes	essential
+lineage4.1.1.1	4340350	1	81	C	A	27	CCC	CCA	P	P	Rv3864	espE	syn	cell wall and cell processes	essential
+lineage4.1.1.2	495104	1	2211	C	T	737	CTG	CTA	L	L	Rv0410c	pknG	syn	regulatory proteins	essential
+lineage4.1.1.2	541048	1	444	T	G	148	TCA	TCC	S	S	Rv0450c	mmpL4	syn	cell wall and cell processes	essential
+lineage4.1.1.2	738135	1	15	T	C	5	TCA	TCG	S	S	Rv0643c	mmaA3	syn	lipid metabolism	essential
+lineage4.1.1.2	2352142	1	888	C	T	296	CCG	CCA	P	P	Rv2093c	tatC	syn	cell wall and cell processes	essential
+lineage4.1.1.2	3138138	1	1044	C	A	348	GTG	GTT	V	V	Rv2832c	ugpC	syn	cell wall and cell processes	essential
+lineage4.1.1.2	3368566	1	228	G	T	76	GCC	GCA	A	A	Rv3009c	gatB	syn	information pathways	essential
+lineage4.1.1.2	3626305	1	309	G	A	103	AGC	AGT	S	S	Rv3245c	mtrB	syn	regulatory proteins	essential
+lineage4.1.1.3	155293	1	1062	G	A	354	CCG	CCA	P	P	Rv0127	mak	syn	virulence, detoxification, adaptation	essential
+lineage4.1.1.3	896356	1	537	C	T	179	ACC	ACT	T	T	Rv0803	purL	syn	intermediary metabolism and respiration	essential
+lineage4.1.1.3	1884697	1	2994	G	A	998	GGG	GGA	G	G	Rv1662	pks8	syn	lipid metabolism	essential
+lineage4.1.1.3	2460628	1	951	C	A	317	GCC	GCA	A	A	Rv2196	qcrB	syn	intermediary metabolism and respiration	essential
+lineage4.1.1.3	3219790	1	72	G	A	24	ATC	ATT	I	I	Rv2912c	.	syn	regulatory proteins	essential
+lineage4.1.1.3	4154051	1	312	G	A	104	CGG	CGA	R	R	Rv3710	leuA	syn	intermediary metabolism and respiration	essential
+lineage4.1.1.3	4229087	1	741	C	T	247	AAC	AAT	N	N	Rv3782	glfT1	syn	cell wall and cell processes	essential
+lineage4.1.2	891756	1	514	A	G	172	TTG	CTG	L	L	Rv0798c	cfp29	syn	virulence, detoxification, adaptation	essential
+lineage4.1.2.1	107794	1	195	C	T	65	GCC	GCT	A	A	Rv0098	fcoT	syn	lipid metabolism	essential
+lineage4.1.2.1	981670	1	885	C	T	295	CGG	CGA	R	R	Rv0884c	serC	syn	intermediary metabolism and respiration	essential
+lineage4.2	1466779	1	939	C	T	313	ATC	ATT	I	I	Rv1310	atpD	syn	intermediary metabolism and respiration	essential
+lineage4.2	1719823	1	1098	A	G	366	AAA	AAG	K	K	Rv1524	.	syn	intermediary metabolism and respiration	essential
+lineage4.2	1849381	1	2655	G	A	885	ATC	ATT	I	I	Rv1640c	lysX	syn	information pathways	essential
+lineage4.2	1860528	1	771	T	C	257	TGT	TGC	C	C	Rv1650	pheT	syn	information pathways	essential
+lineage4.2	2411730	1	393	G	C	131	TCC	TCG	S	S	Rv2152c	murC	syn	cell wall and cell processes	essential
+lineage4.2	2441970	1	348	G	A	116	TTC	TTT	F	F	Rv2179c	.	syn	conserved hypotheticals	essential
+lineage4.2	2942377	1	891	G	A	297	GGC	GGT	G	G	Rv2614c	thrS	syn	information pathways	essential
+lineage4.2	4073918	1	285	G	A	95	CTG	CTA	L	L	Rv3635	.	syn	cell wall and cell processes	essential
+lineage4.2.1	783601	1	1117	A	C	373	AGG	CGG	R	R	Rv0684	fusA1	syn	information pathways	essential
+lineage4.2.2	74956	1	243	T	C	81	AAA	AAG	K	K	Rv0067c	.	syn	regulatory proteins	nonessential
+lineage4.2.2	576077	1	730	C	T	244	CTG	TTG	L	L	Rv0486	mshA	syn	intermediary metabolism and respiration	nonessential
+lineage4.2.2	1487796	1	636	C	A	212	ATC	ATA	I	I	Rv1324	.	syn	intermediary metabolism and respiration	nonessential
+lineage4.2.2.1	1131	1	1131	C	A	377	ATC	ATA	I	I	Rv0001	dnaA	syn	information pathways	essential
+lineage4.2.2.1	1455780	1	286	T	C	96	TTG	CTG	L	L	Rv1299	prfA	syn	information pathways	essential
+lineage4.3	764995	1	1626	C	G	542	GCC	GCG	A	A	Rv0668	rpoC	syn	information pathways	essential
+lineage4.3.1	502262	1	96	C	T	32	ATC	ATT	I	I	Rv0416	thiS	syn	intermediary metabolism and respiration	essential
+lineage4.3.1	615614	1	780	C	A	260	GCC	GCA	A	A	Rv0524	hemL	syn	intermediary metabolism and respiration	essential
+lineage4.3.1	825585	1	786	T	C	262	TAT	TAC	Y	Y	Rv0732	secY	syn	cell wall and cell processes	essential
+lineage4.3.1	1137773	1	288	C	T	96	GGG	GGA	G	G	Rv1018c	glmU	syn	cell wall and cell processes	essential
+lineage4.3.1	1421109	1	1197	A	G	399	TTT	TTC	F	F	Rv1272c	.	syn	cell wall and cell processes	essential
+lineage4.3.1	1427896	1	483	T	G	161	GGT	GGG	G	G	Rv1278	.	syn	conserved hypotheticals	essential
+lineage4.3.1	3629572	1	76	G	A	26	CTG	TTG	L	L	Rv3248c	sahH	syn	intermediary metabolism and respiration	essential
+lineage4.3.1	3860288	1	1083	C	T	361	TCG	TCA	S	S	Rv3441c	mrsA	syn	intermediary metabolism and respiration	essential
+lineage4.3.2	4316114	1	483	G	A	161	GCC	GCT	A	A	Rv3843c	.	syn	cell wall and cell processes	nonessential
+lineage4.3.2.1	7222	1	1983	C	T	661	AGC	AGT	S	S	Rv0005	gyrB	syn	information pathways	essential
+lineage4.3.2.1	784581	1	2097	G	C	699	ACG	ACC	T	T	Rv0684	fusA1	syn	information pathways	essential
+lineage4.3.2.1	1055672	1	1014	C	A	338	CTG	CTT	L	L	Rv0946c	pgi	syn	intermediary metabolism and respiration	essential
+lineage4.3.2.1	1592015	1	345	C	T	115	GGC	GGT	G	G	Rv1416	ribH	syn	intermediary metabolism and respiration	essential
+lineage4.3.2.1	2844689	1	4644	G	C	1548	CTC	CTG	L	L	Rv2524c	fas	syn	lipid metabolism	essential
+lineage4.3.2.1	2871911	1	105	G	A	35	GAC	GAT	D	D	Rv2552c	aroE	syn	intermediary metabolism and respiration	essential
+lineage4.3.2.1	3388166	1	705	C	G	235	ACG	ACC	T	T	Rv3029c	fixA	syn	intermediary metabolism and respiration	essential
+lineage4.3.3	403364	1	2478	G	A	826	CCC	CCT	P	P	Rv0338c	.	syn	intermediary metabolism and respiration	essential
+lineage4.3.3	1390527	1	2526	C	G	842	TCG	TCC	S	S	Rv1248c	.	syn	intermediary metabolism and respiration	essential
+lineage4.3.3	2077253	1	1377	G	A	459	ACG	ACA	T	T	Rv1832	gcvB	syn	intermediary metabolism and respiration	essential
+lineage4.3.4	1297327	1	1176	G	A	392	GTG	GTA	V	V	Rv1166	lpqW	syn	cell wall and cell processes	essential
+lineage4.3.4	3977226	1	165	G	A	55	TTG	TTA	L	L	Rv3538	.	syn	intermediary metabolism and respiration	essential
+lineage4.3.4	4042761	1	180	G	A	60	GAC	GAT	D	D	Rv3598c	lysS	syn	information pathways	essential
+lineage4.3.4.1	4398141	1	1545	G	A	515	TCG	TCA	S	S	Rv3910	.	syn	cell wall and cell processes	essential
+lineage4.3.4.2	784440	1	1956	G	T	652	GCG	GCT	A	A	Rv0684	fusA1	syn	information pathways	essential
+lineage4.3.4.2	1132368	1	744	C	T	248	ACC	ACT	T	T	Rv1013	pks16	syn	lipid metabolism	essential
+lineage4.3.4.2.1	1502120	1	522	C	A	174	ACC	ACA	T	T	Rv1333	.	syn	intermediary metabolism and respiration	essential
+lineage4.4	1392921	1	132	G	A	44	CCC	CCT	P	P	Rv1248c	.	syn	intermediary metabolism and respiration	essential
+lineage4.4	4307886	1	1029	G	A	343	CGC	CGT	R	R	Rv3834c	serS	syn	information pathways	essential
+lineage4.4.1	2905505	1	588	G	A	196	ACC	ACT	T	T	Rv2580c	hisS	syn	information pathways	essential
+lineage4.4.1	3664135	1	447	G	A	149	CGG	CGA	R	R	Rv3281	accE5	syn	lipid metabolism	essential
+lineage4.4.1	3813473	1	606	G	A	202	CTC	CTT	L	L	Rv3396c	guaA	syn	intermediary metabolism and respiration	essential
+lineage4.4.1	4151558	1	660	G	A	220	GGC	GGT	G	G	Rv3708c	asd	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.1	355181	1	684	G	A	228	AAG	AAA	K	K	Rv0291	mycP3	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.1	874640	1	408	C	T	136	AAC	AAT	N	N	Rv0781	ptrBa	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.1	1146421	1	564	C	T	188	ACC	ACT	T	T	Rv1024	.	syn	cell wall and cell processes	essential
+lineage4.4.1.1	1321210	1	1176	C	T	392	GGC	GGT	G	G	Rv1182	papA3	syn	lipid metabolism	essential
+lineage4.4.1.1	2671091	1	513	G	T	171	ACC	ACA	T	T	Rv2382c	mbtC	syn	lipid metabolism	essential
+lineage4.4.1.1	3349564	1	714	A	C	238	GCT	GCG	A	A	Rv2992c	gltS	syn	information pathways	essential
+lineage4.4.1.1	4035305	1	954	T	C	318	CGT	CGC	R	R	Rv3593	lpqF	syn	cell wall and cell processes	essential
+lineage4.4.1.1	4151996	1	222	C	T	74	TCG	TCA	S	S	Rv3708c	asd	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.1	4343679	1	366	C	T	122	GCC	GCT	A	A	Rv3868	eccA1	syn	cell wall and cell processes	essential
+lineage4.4.1.2	342201	1	72	C	G	24	CCC	CCG	P	P	Rv0282	eccA3	syn	cell wall and cell processes	essential
+lineage4.4.1.2	345697	1	63	C	T	21	ACC	ACT	T	T	Rv0284	eccC3	syn	cell wall and cell processes	essential
+lineage4.4.1.2	1297981	1	1830	G	C	610	GTG	GTC	V	V	Rv1166	lpqW	syn	cell wall and cell processes	essential
+lineage4.4.1.2	1494231	1	195	G	A	65	CTC	CTT	L	L	Rv1327c	glgE	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.2	1803959	1	666	G	T	222	GGG	GGT	G	G	Rv1603	hisA	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.2	1808124	1	222	A	C	74	CCA	CCC	P	P	Rv1609	trpE	syn	intermediary metabolism and respiration	essential
+lineage4.4.1.2	2410938	1	1185	A	T	395	GCT	GCA	A	A	Rv2152c	murC	syn	cell wall and cell processes	essential
+lineage4.4.1.2	2694560	1	405	G	C	135	CTC	CTG	L	L	Rv2397c	cysA1	syn	cell wall and cell processes	essential
+lineage4.4.1.2	3216607	1	285	G	A	95	CCC	CCT	P	P	Rv2907c	rimM	syn	information pathways	essential
+lineage4.4.1.2	3349093	1	1185	G	C	395	CCC	CCG	P	P	Rv2992c	gltS	syn	information pathways	essential
+lineage4.4.1.2	4249012	1	2499	G	A	833	CTG	CTA	L	L	Rv3795	embB	syn	cell wall and cell processes	essential
+lineage4.4.1.2	4392120	1	954	G	A	318	CAC	CAT	H	H	Rv3907c	pcnA	syn	information pathways	essential
+lineage4.4.2	45073	1	1512	G	A	504	GAG	GAA	E	E	Rv0041	leuS	syn	information pathways	essential
+lineage4.4.2	109043	1	888	G	A	296	TCG	TCA	S	S	Rv0099	fadD10	syn	lipid metabolism	essential
+lineage4.4.2	500530	1	489	G	A	163	GCC	GCT	A	A	Rv0414c	thiE	syn	intermediary metabolism and respiration	essential
+lineage4.4.2	1644855	1	1284	C	T	428	CTG	CTA	L	L	Rv1459c	.	syn	cell wall and cell processes	essential
+lineage4.4.2	2436247	1	339	C	T	113	ACC	ACT	T	T	Rv2174	mptA	syn	cell wall and cell processes	essential
+lineage4.4.2	3393033	1	222	C	T	74	CCC	CCT	P	P	Rv3032A	.	syn	conserved hypotheticals	essential
+lineage4.4.2	3990402	1	507	G	A	169	TTG	TTA	L	L	Rv3551	.	syn	intermediary metabolism and respiration	essential
+lineage4.4.2	4161581	1	534	C	T	178	GAC	GAT	D	D	Rv3717	.	syn	conserved hypotheticals	essential
+lineage4.4.2	4246508	1	3276	G	A	1092	GCG	GCA	A	A	Rv3794	embA	syn	cell wall and cell processes	essential
+lineage4.4.2	4268928	1	906	G	A	302	GGC	GGT	G	G	Rv3806c	ubiA	syn	cell wall and cell processes	essential
+lineage4.4.2	4269375	1	459	C	T	153	GTG	GTA	V	V	Rv3806c	ubiA	syn	cell wall and cell processes	essential
+lineage4.5	620029	1	139	C	T	47	CTG	TTG	L	L	Rv0529	ccsA	syn	intermediary metabolism and respiration	essential
+lineage4.5	1645599	1	540	C	T	180	GCG	GCA	A	A	Rv1459c	.	syn	cell wall and cell processes	essential
+lineage4.5	1719757	1	1032	G	T	344	CCG	CCT	P	P	Rv1524	.	syn	intermediary metabolism and respiration	essential
+lineage4.5	2597696	1	162	C	T	54	CCG	CCA	P	P	Rv2325c	.	syn	conserved hypotheticals	essential
+lineage4.5	2790578	1	445	G	A	149	CTG	TTG	L	L	Rv2483c	plsC	syn	lipid metabolism	essential
+lineage4.5	4016840	1	357	G	A	119	GTG	GTA	V	V	Rv3574	kstR	syn	regulatory proteins	essential
+lineage4.5	4152890	1	594	G	A	198	TTC	TTT	F	F	Rv3709c	ask	syn	intermediary metabolism and respiration	essential
+lineage4.5	4254632	1	1317	G	A	439	GAC	GAT	D	D	Rv3799c	accD4	syn	lipid metabolism	essential
+lineage4.6	54304	1	642	C	T	214	CTC	CTT	L	L	Rv0050	ponA1	syn	cell wall and cell processes	nonessential
+lineage4.6	3170460	1	264	C	T	88	GTG	GTA	V	V	Rv2858c	aldC	syn	intermediary metabolism and respiration	nonessential
+lineage4.6	3466426	1	666	G	A	222	GTC	GTT	V	V	Rv3097c	lipY	syn	PE/PPE	nonessential
+lineage4.6.1	435708	1	1062	G	A	354	ACC	ACT	T	T	Rv0357c	purA	syn	intermediary metabolism and respiration	essential
+lineage4.6.1	2440953	1	768	G	T	256	CGC	CGA	R	R	Rv2178c	aroG	syn	intermediary metabolism and respiration	essential
+lineage4.6.1	4155050	1	1311	G	A	437	GTG	GTA	V	V	Rv3710	leuA	syn	intermediary metabolism and respiration	essential
+lineage4.6.1	4260268	1	879	G	C	293	GCC	GCG	A	A	Rv3800c	pks13	syn	lipid metabolism	essential
+lineage4.6.1.1	874787	1	555	G	A	185	CCG	CCA	P	P	Rv0781	ptrBa	syn	intermediary metabolism and respiration	essential
+lineage4.6.1.1	996871	1	348	G	A	116	TTG	TTA	L	L	Rv0894	.	syn	regulatory proteins	essential
+lineage4.6.1.1	1439332	1	426	C	T	142	GTC	GTT	V	V	Rv1286	cysN	syn	intermediary metabolism and respiration	essential
+lineage4.6.1.1	1597696	1	816	G	A	272	GAG	GAA	E	E	Rv1422	.	syn	conserved hypotheticals	essential
+lineage4.6.1.1	1955910	1	1336	T	G	446	AGG	CGG	R	R	Rv1730c	.	syn	cell wall and cell processes	essential
+lineage4.6.1.1	4052608	1	276	G	A	92	TTC	TTT	F	F	Rv3610c	ftsH	syn	cell wall and cell processes	essential
+lineage4.6.1.1	4406749	1	783	G	A	261	CTC	CTT	L	L	Rv3918c	parA	syn	cell wall and cell processes	essential
+lineage4.6.1.2	1098698	1	1191	C	G	397	GGC	GGG	G	G	Rv0982	mprB	syn	regulatory proteins	essential
+lineage4.6.1.2	1391868	1	1185	G	A	395	GAC	GAT	D	D	Rv1248c	.	syn	intermediary metabolism and respiration	essential
+lineage4.6.1.2	1501468	1	543	G	C	181	CCG	CCC	P	P	Rv1332	.	syn	regulatory proteins	essential
+lineage4.6.1.2	1832350	1	1686	G	A	562	CAG	CAA	Q	Q	Rv1629	polA	syn	information pathways	essential
+lineage4.6.1.2	3332626	1	129	C	T	43	CTG	CTA	L	L	Rv2976c	ung	syn	information pathways	essential
+lineage4.6.1.2	3423426	1	2002	G	A	668	CTA	TTA	L	L	Rv3061c	fadE22	syn	lipid metabolism	essential
+lineage4.6.2	1886982	1	471	C	T	157	ATC	ATT	I	I	Rv1663	pks17	syn	lipid metabolism	essential
+lineage4.6.2	1939026	1	189	C	T	63	GTC	GTT	V	V	Rv1711	.	syn	conserved hypotheticals	essential
+lineage4.6.2	4125058	1	642	G	C	214	CGG	CGC	R	R	Rv3683	.	syn	conserved hypotheticals	essential
+lineage4.6.2	4260742	1	405	G	A	135	CCC	CCT	P	P	Rv3800c	pks13	syn	lipid metabolism	essential
+lineage4.6.2.1	324	1	324	C	G	108	GCC	GCG	A	A	Rv0001	dnaA	syn	information pathways	essential
+lineage4.6.2.1	60473	1	78	G	A	26	CAG	CAA	Q	Q	Rv0058	dnaB	syn	information pathways	essential
+lineage4.6.2.1	896119	1	300	C	T	100	TTC	TTT	F	F	Rv0803	purL	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.1	1245962	1	834	A	G	278	GGA	GGG	G	G	Rv1122	gnd2	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.1	1323466	1	1947	G	A	649	TTG	TTA	L	L	Rv1183	mmpL10	syn	cell wall and cell processes	essential
+lineage4.6.2.1	1335964	1	171	G	T	57	GCG	GCT	A	A	Rv1193	fadD36	syn	lipid metabolism	essential
+lineage4.6.2.1	1565230	1	138	C	G	46	CGC	CGG	R	R	Rv1390	rpoZ	syn	information pathways	essential
+lineage4.6.2.1	1872460	1	1098	C	T	366	ACC	ACT	T	T	Rv1658	argG	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.1	2066765	1	309	G	A	103	CAG	CAA	Q	Q	Rv1821	secA2	syn	cell wall and cell processes	essential
+lineage4.6.2.1	2640144	1	921	C	T	307	CTG	CTA	L	L	Rv2357c	glyS	syn	information pathways	essential
+lineage4.6.2.1	2864155	1	258	C	T	86	GAG	GAA	E	E	Rv2540c	aroF	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.1	2999648	1	321	G	A	107	GAC	GAT	D	D	Rv2682c	dxs1	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.1	3010332	1	309	C	T	103	AAC	AAT	N	N	Rv2692	ceoC	syn	cell wall and cell processes	essential
+lineage4.6.2.1	3570528	1	684	C	G	228	CGG	CGC	R	R	Rv3198c	uvrD2	syn	information pathways	essential
+lineage4.6.2.1	4348079	1	1599	C	T	533	AAC	AAT	N	N	Rv3870	eccCa1	syn	cell wall and cell processes	essential
+lineage4.6.2.2	118469	1	756	G	A	252	GCG	GCA	A	A	Rv0102	.	syn	cell wall and cell processes	essential
+lineage4.6.2.2	142317	1	1560	C	T	520	GCG	GCA	A	A	Rv0118c	oxcA	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.2	540349	1	1143	C	T	381	GTG	GTA	V	V	Rv0450c	mmpL4	syn	cell wall and cell processes	essential
+lineage4.6.2.2	1352350	1	207	C	T	69	GTC	GTT	V	V	Rv1208	gpgS	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.2	1614697	1	369	C	T	123	TTC	TTT	F	F	Rv1437	pgk	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.2	2369118	1	612	G	A	204	GGC	GGT	G	G	Rv2109c	prcA	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.2	2875883	1	603	C	T	201	CTG	CTA	L	L	Rv2555c	alaS	syn	information pathways	essential
+lineage4.6.2.2	3139540	1	945	G	T	315	CTC	CTA	L	L	Rv2833c	ugpB	syn	cell wall and cell processes	essential
+lineage4.6.2.2	3354625	1	445	G	A	149	CTG	TTG	L	L	Rv2996c	serA1	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.2	3357727	1	126	G	A	42	TCG	TCA	S	S	Rv2999	lppY	syn	cell wall and cell processes	essential
+lineage4.6.2.2	3360152	1	435	C	A	145	CCG	CCT	P	P	Rv3001c	ilvC	syn	intermediary metabolism and respiration	essential
+lineage4.6.2.2	4004368	1	78	C	T	26	GAC	GAT	D	D	Rv3563	fadE32	syn	lipid metabolism	essential
+lineage4.6.2.2	4328004	1	456	G	A	152	GTG	GTA	V	V	Rv3855	ethR	syn	regulatory proteins	essential
+lineage4.7	4249732	1	3219	C	G	1073	GCC	GCG	A	A	Rv3795	embB	syn	cell wall and cell processes	essential
+lineage4.8	3836739	1	153	G	A	51	GAC	GAT	D	D	Rv3417c	groEL1	syn	virulence, detoxification, adaptation	essential
+lineage4.9	1759252	1	1572	G	T	524	TCG	TCT	S	S	Rv1552	frdA	syn	intermediary metabolism and respiration	nonessential
+lineage5	46297	1	2736	T	C	912	TAT	TAC	Y	Y	Rv0041	leuS	syn	information pathways	essential
+lineage5	344258	1	237	G	A	79	GTG	GTA	V	V	Rv0283	eccB3	syn	cell wall and cell processes	essential
+lineage5	345317	1	1296	G	C	432	GTG	GTC	V	V	Rv0283	eccB3	syn	cell wall and cell processes	essential
+lineage5	352646	1	498	G	A	166	CCG	CCA	P	P	Rv0289	espG3	syn	cell wall and cell processes	essential
+lineage5	379687	1	516	C	T	172	GTC	GTT	V	V	Rv0311	.	syn	conserved hypotheticals	essential
+lineage5	801959	1	498	C	T	166	CGC	CGT	R	R	Rv0702	rplD	syn	information pathways	essential
+lineage5	910282	1	561	G	T	187	TCC	TCA	S	S	Rv0817c	.	syn	cell wall and cell processes	essential
+lineage5	1145442	1	879	C	G	293	GGC	GGG	G	G	Rv1023	eno	syn	intermediary metabolism and respiration	essential
+lineage5	1505806	1	732	C	T	244	CCC	CCT	P	P	Rv1338	murI	syn	cell wall and cell processes	essential
+lineage5	1555432	1	1245	C	T	415	ACC	ACT	T	T	Rv1381	pyrC	syn	intermediary metabolism and respiration	essential
+lineage5	1556030	1	60	C	T	20	GGC	GGT	G	G	Rv1383	carA	syn	intermediary metabolism and respiration	essential
+lineage5	1658030	1	1068	C	T	356	ATC	ATT	I	I	Rv1469	ctpD	syn	cell wall and cell processes	essential
+lineage5	1799921	1	339	C	A	113	GGC	GGA	G	G	Rv1599	hisD	syn	intermediary metabolism and respiration	essential
+lineage5	1909456	1	1863	C	T	621	GCC	GCT	A	A	Rv1683	.	syn	lipid metabolism	essential
+lineage5	2099631	1	1671	C	T	557	GGC	GGT	G	G	Rv1850	ureC	syn	intermediary metabolism and respiration	essential
+lineage5	2304017	1	2970	C	T	990	CTG	CTA	L	L	Rv2048c	pks12	syn	lipid metabolism	essential
+lineage5	2489855	1	2499	C	T	833	ACG	ACA	T	T	Rv2221c	glnE	syn	intermediary metabolism and respiration	essential
+lineage5	2645780	1	894	C	T	298	CTG	CTA	L	L	Rv2364c	era	syn	intermediary metabolism and respiration	essential
+lineage5	2744225	1	760	A	G	254	TTG	CTG	L	L	Rv2444c	rne	syn	information pathways	essential
+lineage5	2859147	1	144	C	T	48	AAG	AAA	K	K	Rv2534c	efp	syn	information pathways	essential
+lineage5	3840932	1	489	G	A	163	AAC	AAT	N	N	Rv3423c	alr	syn	intermediary metabolism and respiration	essential
+lineage5	4074437	1	804	G	C	268	CCG	CCC	P	P	Rv3635	.	syn	cell wall and cell processes	essential
+lineage5	4086604	1	654	G	A	218	TAC	TAT	Y	Y	Rv3646c	topA	syn	information pathways	essential
+lineage5	4397763	1	1167	C	A	389	CCC	CCA	P	P	Rv3910	.	syn	cell wall and cell processes	essential
+lineage6	272306	1	534	C	A	178	GCG	GCT	A	A	Rv0227c	.	syn	cell wall and cell processes	essential
+lineage6	402881	1	282	G	A	94	GAC	GAT	D	D	Rv0337c	aspC	syn	intermediary metabolism and respiration	essential
+lineage6	518166	1	231	G	T	77	CGC	CGA	R	R	Rv0429c	def	syn	information pathways	essential
+lineage6	590622	1	540	C	G	180	GGC	GGG	G	G	Rv0500	proC	syn	intermediary metabolism and respiration	essential
+lineage6	1150490	1	1197	C	G	399	TCG	TCC	S	S	Rv1028c	kdpD	syn	regulatory proteins	essential
+lineage6	1461251	1	207	G	T	69	GCG	GCT	A	A	Rv1305	atpE	syn	intermediary metabolism and respiration	essential
+lineage6	1666671	1	468	G	A	156	GTG	GTA	V	V	Rv1476	.	syn	cell wall and cell processes	essential
+lineage6	1776663	1	1272	G	A	424	TCG	TCA	S	S	Rv1568	bioA	syn	intermediary metabolism and respiration	essential
+lineage6	1805670	1	18	G	A	6	AAG	AAA	K	K	Rv1606	hisI	syn	intermediary metabolism and respiration	essential
+lineage6	1816587	1	399	C	G	133	GTC	GTG	V	V	Rv1617	pykA	syn	intermediary metabolism and respiration	essential
+lineage6	1875585	1	282	C	T	94	ACC	ACT	T	T	Rv1661	pks7	syn	lipid metabolism	essential
+lineage6	2817056	1	1419	C	T	473	GCG	GCA	A	A	Rv2502c	accD1	syn	lipid metabolism	essential
+lineage6	2844335	1	4998	C	A	1666	ACG	ACT	T	T	Rv2524c	fas	syn	lipid metabolism	essential
+lineage6	2939177	1	786	A	G	262	TAT	TAC	Y	Y	Rv2611c	.	syn	lipid metabolism	essential
+lineage6	3014016	1	132	C	T	44	CTG	CTA	L	L	Rv2697c	dut	syn	intermediary metabolism and respiration	essential
+lineage6	3152837	1	114	C	G	38	GCG	GCC	A	A	Rv2845c	proS	syn	information pathways	essential
+lineage6	3353082	1	387	G	C	129	ACC	ACG	T	T	Rv2995c	leuB	syn	intermediary metabolism and respiration	essential
+lineage6	4272211	1	69	C	T	23	GTG	GTA	V	V	Rv3808c	glfT2	syn	cell wall and cell processes	essential
+lineage6	4346843	1	363	C	A	121	ACC	ACA	T	T	Rv3870	eccCa1	syn	cell wall and cell processes	essential
+lineage7	207592	1	141	G	A	47	ACG	ACA	T	T	Rv0176	.	syn	cell wall and cell processes	essential
+lineage7	349081	1	3447	G	A	1149	CTG	CTA	L	L	Rv0284	eccC3	syn	cell wall and cell processes	essential
+lineage7	379417	1	246	A	G	82	CTA	CTG	L	L	Rv0311	.	syn	conserved hypotheticals	essential
+lineage7	381053	1	498	C	T	166	TTC	TTT	F	F	Rv0312	.	syn	conserved hypotheticals	essential
+lineage7	497126	1	189	G	A	63	ACC	ACT	T	T	Rv0410c	pknG	syn	regulatory proteins	essential
+lineage7	540424	1	1068	G	T	356	GTC	GTA	V	V	Rv0450c	mmpL4	syn	cell wall and cell processes	essential
+lineage7	752014	1	498	C	T	166	GGC	GGT	G	G	Rv0655	mkl	syn	cell wall and cell processes	essential
+lineage7	811642	1	270	C	T	90	GAC	GAT	D	D	Rv0714	rplN	syn	information pathways	essential
+lineage7	896431	1	612	G	A	204	CTG	CTA	L	L	Rv0803	purL	syn	intermediary metabolism and respiration	essential
+lineage7	973932	1	363	G	C	121	CCC	CCG	P	P	Rv0875c	.	syn	cell wall and cell processes	essential
+lineage7	1125894	1	1110	A	C	370	CTT	CTG	L	L	Rv1007c	metS	syn	information pathways	essential
+lineage7	1137518	1	543	G	A	181	AAC	AAT	N	N	Rv1018c	glmU	syn	cell wall and cell processes	essential
+lineage7	1143126	1	456	C	T	152	ATC	ATT	I	I	Rv1021	.	syn	conserved hypotheticals	essential
+lineage7	1237743	1	450	G	A	150	GCC	GCT	A	A	Rv1111c	.	syn	conserved hypotheticals	essential
+lineage7	1297084	1	933	G	A	311	CTG	CTA	L	L	Rv1166	lpqW	syn	cell wall and cell processes	essential
+lineage7	1329168	1	138	C	T	46	CTG	CTA	L	L	Rv1186c	.	syn	conserved hypotheticals	essential
+lineage7	1365895	1	21	G	A	7	ACG	ACA	T	T	Rv1223	htrA	syn	intermediary metabolism and respiration	essential
+lineage7	1440409	1	1503	G	A	501	CTG	CTA	L	L	Rv1286	cysN	syn	intermediary metabolism and respiration	essential
+lineage7	1463776	1	549	C	T	183	GTC	GTT	V	V	Rv1308	atpA	syn	intermediary metabolism and respiration	essential
+lineage7	1513250	1	204	C	T	68	TTC	TTT	F	F	Rv1348	irtA	syn	cell wall and cell processes	essential
+lineage7	1595934	1	1893	G	C	631	ACG	ACC	T	T	Rv1420	uvrC	syn	information pathways	essential
+lineage7	1613708	1	402	C	T	134	GAC	GAT	D	D	Rv1436	gap	syn	intermediary metabolism and respiration	essential
+lineage7	1663221	1	2826	T	G	942	TCA	TCC	S	S	Rv1475c	acn	syn	intermediary metabolism and respiration	essential
+lineage7	1791504	1	171	C	T	57	CCC	CCT	P	P	Rv1590	.	syn	conserved hypotheticals	essential
+lineage7	1791537	1	204	G	A	68	GGG	GGA	G	G	Rv1590	.	syn	conserved hypotheticals	essential
+lineage7	1799774	1	192	C	T	64	GCC	GCT	A	A	Rv1599	hisD	syn	intermediary metabolism and respiration	essential
+lineage7	1867937	1	96	C	T	32	GTC	GTT	V	V	Rv1654	argB	syn	intermediary metabolism and respiration	essential
+lineage7	1965815	1	159	C	T	53	AAC	AAT	N	N	Rv1738	.	syn	conserved hypotheticals	essential
+lineage7	2287790	1	57	A	C	19	ACT	ACG	T	T	Rv2041c	.	syn	cell wall and cell processes	essential
+lineage7	2303524	1	3463	G	T	1155	CGG	AGG	R	R	Rv2048c	pks12	syn	lipid metabolism	essential
+lineage7	2305184	1	1803	C	A	601	TCG	TCT	S	S	Rv2048c	pks12	syn	lipid metabolism	essential
+lineage7	2380244	1	417	G	A	139	GCC	GCT	A	A	Rv2121c	hisG	syn	intermediary metabolism and respiration	essential
+lineage7	2414272	1	651	C	T	217	TCG	TCA	S	S	Rv2154c	ftsW	syn	cell wall and cell processes	essential
+lineage7	2414434	1	489	A	C	163	TCT	TCG	S	S	Rv2154c	ftsW	syn	cell wall and cell processes	essential
+lineage7	2512754	1	216	C	A	72	GGC	GGA	G	G	Rv2241	aceE	syn	intermediary metabolism and respiration	essential
+lineage7	2549256	1	774	G	A	258	TTC	TTT	F	F	Rv2277c	.	syn	intermediary metabolism and respiration	essential
+lineage7	2621157	1	1296	T	C	432	GCA	GCG	A	A	Rv2343c	dnaG	syn	information pathways	essential
+lineage7	2759363	1	126	A	G	42	TGT	TGC	C	C	Rv2457c	clpX	syn	intermediary metabolism and respiration	essential
+lineage7	2789841	1	1182	G	A	394	CGC	CGT	R	R	Rv2483c	plsC	syn	lipid metabolism	essential
+lineage7	2822737	1	300	G	A	100	CCG	CCA	P	P	Rv2507	.	syn	cell wall and cell processes	essential
+lineage7	2833478	1	36	A	G	12	GAT	GAC	D	D	Rv2516c	.	syn	conserved hypotheticals	essential
+lineage7	2842238	1	7095	C	A	2365	GCG	GCT	A	A	Rv2524c	fas	syn	lipid metabolism	essential
+lineage7	2871227	1	789	G	A	263	TGC	TGT	C	C	Rv2552c	aroE	syn	intermediary metabolism and respiration	essential
+lineage7	2999030	1	939	G	A	313	GGC	GGT	G	G	Rv2682c	dxs1	syn	intermediary metabolism and respiration	essential
+lineage7	3046916	1	96	A	C	32	GCA	GCC	A	A	Rv2734	.	syn	conserved hypotheticals	essential
+lineage7	3140047	1	438	G	A	146	TAC	TAT	Y	Y	Rv2833c	ugpB	syn	cell wall and cell processes	essential
+lineage7	3225566	1	720	C	T	240	GCG	GCA	A	A	Rv2916c	ffh	syn	cell wall and cell processes	essential
+lineage7	3287589	1	2520	C	T	840	GCC	GCT	A	A	Rv2942	mmpL7	syn	cell wall and cell processes	essential
+lineage7	3324231	1	246	G	C	82	TCC	TCG	S	S	Rv2969c	.	syn	cell wall and cell processes	essential
+lineage7	3360233	1	354	G	A	118	GCC	GCT	A	A	Rv3001c	ilvC	syn	intermediary metabolism and respiration	essential
+lineage7	3470461	1	219	G	A	73	TGC	TGT	C	C	Rv3101c	ftsX	syn	cell wall and cell processes	essential
+lineage7	3473482	1	423	C	T	141	CGG	CGA	R	R	Rv3105c	prfB	syn	information pathways	essential
+lineage7	3635935	1	333	C	G	111	CGG	CGC	R	R	Rv3255c	manA	syn	intermediary metabolism and respiration	essential
+lineage7	3666497	1	141	C	T	47	GCC	GCT	A	A	Rv3285	accA3	syn	lipid metabolism	essential
+lineage7	3667883	1	1527	C	A	509	GTC	GTA	V	V	Rv3285	accA3	syn	lipid metabolism	essential
+lineage7	3817814	1	576	C	T	192	GCC	GCT	A	A	Rv3400	.	syn	intermediary metabolism and respiration	essential
+lineage7	3860696	1	675	G	A	225	GAC	GAT	D	D	Rv3441c	mrsA	syn	intermediary metabolism and respiration	essential
+lineage7	3878040	1	468	A	G	156	GGT	GGC	G	G	Rv3457c	rpoA	syn	information pathways	essential
+lineage7	4022163	1	231	C	T	77	CTG	CTA	L	L	Rv3579c	.	syn	intermediary metabolism and respiration	essential
+lineage7	4086748	1	510	C	G	170	CTG	CTC	L	L	Rv3646c	topA	syn	information pathways	essential
+lineage7	4240153	1	291	G	A	97	TCG	TCA	S	S	Rv3793	embC	syn	cell wall and cell processes	essential
+lineage7	4262608	1	459	G	A	153	ATC	ATT	I	I	Rv3801c	fadD32	syn	lipid metabolism	essential
+lineage7	4308411	1	504	T	G	168	CTA	CTC	L	L	Rv3834c	serS	syn	information pathways	essential
+lineage7	4331184	1	322	G	A	108	CTG	TTG	L	L	Rv3858c	gltD	syn	intermediary metabolism and respiration	essential
+lineage7	4343706	1	393	C	T	131	TCC	TCT	S	S	Rv3868	eccA1	syn	cell wall and cell processes	essential
+lineage7	4354860	1	1851	A	G	617	CAA	CAG	Q	Q	Rv3876	espI	syn	cell wall and cell processes	essential
+lineage7	4355438	1	432	T	C	144	TTT	TTC	F	F	Rv3877	eccD1	syn	cell wall and cell processes	essential
+lineageBOV	1427476	1	63	C	T	21	TTC	TTT	F	F	Rv1278	.	syn	conserved hypotheticals	essential
+lineageBOV	2831482	1	1110	A	G	370	GGT	GGC	G	G	Rv2515c	.	syn	conserved hypotheticals	essential
+lineageBOV	3624593	1	318	C	T	106	GTG	GTA	V	V	Rv3244c	lpqB	syn	cell wall and cell processes	essential
+lineageBOV_AFRI	137185	1	897	G	A	299	CAG	CAA	Q	Q	Rv0112	gca	syn	cell wall and cell processes	essential
+lineageBOV_AFRI	273558	1	504	C	G	168	TCC	TCG	S	S	Rv0228	.	syn	intermediary metabolism and respiration	essential
+lineageBOV_AFRI	560857	1	855	C	G	285	CTG	CTC	L	L	Rv0470c	pcaA	syn	lipid metabolism	essential
+lineageBOV_AFRI	1347173	1	1452	C	T	484	CTG	CTA	L	L	Rv1204c	.	syn	conserved hypotheticals	essential
+lineageBOV_AFRI	1390089	1	2964	C	T	988	GCG	GCA	A	A	Rv1248c	.	syn	intermediary metabolism and respiration	essential
+lineageBOV_AFRI	1454811	1	1608	C	T	536	AAC	AAT	N	N	Rv1297	rho	syn	information pathways	essential
+lineageBOV_AFRI	1882180	1	477	C	T	159	GCC	GCT	A	A	Rv1662	pks8	syn	lipid metabolism	essential
+lineageBOV_AFRI	1914570	1	969	A	C	323	GCA	GCC	A	A	Rv1689	tyrS	syn	information pathways	essential
+lineageBOV_AFRI	2415351	1	1044	C	A	348	GTG	GTT	V	V	Rv2155c	murD	syn	cell wall and cell processes	essential
+lineageBOV_AFRI	3134839	1	645	G	A	215	CGC	CGT	R	R	Rv2827c	.	syn	conserved hypotheticals	essential
+lineageBOV_AFRI	3286107	1	1038	C	A	346	GTC	GTA	V	V	Rv2942	mmpL7	syn	cell wall and cell processes	essential
+lineageBOV_AFRI	4246864	1	351	C	T	117	GTC	GTT	V	V	Rv3795	embB	syn	cell wall and cell processes	essential
+lineageBOV_AFRI	4269351	1	483	G	A	161	GCC	GCT	A	A	Rv3806c	ubiA	syn	cell wall and cell processes	essential
