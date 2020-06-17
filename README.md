@@ -17,18 +17,28 @@ Both programs in this package receive either a Sequence Read Archive (SRA)
 accession number, or a list of such SRAs in a text file (one number per line), 
 or the ID of an NCBI BioProject.
 
-**tb-annotator** is used to collect information from a given WGS *tuberculosis*
+**TB-annotator** is used to collect information from a given WGS *tuberculosis*
 genome. SRA files are downloaded if needed, and name of the strain, location, 
 bioproject, biosample, etc. are first collected from the NCBI server, when 
 available:  Read files are then systematically studied, to provide the following 
 information:
  - number of reads, their length, and the mean coverage;
- - 43-spacers based and 98-spacers based *in silico*, and *in vitro* infered, 
+ - 43-spacers based and 98-spacers based *in silico*, and *in vitro* inferred, 
  spoligotypes, plus the SIT number;
  - lineages based on various state-of-the-art SNP collections: PGG, Coll, 
  Palittapongarnpim (L1), Shitikov (L2), and Stucki (L4);
  - the number and position (in h37Rv) of numerous Insertion Sequences, including
  IS6110.
+
+**CRISPRbuilder-TB** reconstructs the whole CRISPR locus starting from WGS data.
+This allows to deduce the true spoligotype, to detect mutants of spacers and
+direct repeats, insertion of mobile elements, and duplications. The Cas locus 
+is reconstructed too. This is a semi automatic approach that leads to a set of 
+contigs to assemble manually. Depending on the number, length, and quality of
+SRAs, the number of contigs can range from 1-2 patterns, in the best case scenario
+where the good quality of sequences allows an automatic reconstruction of the 
+CRISPR cut in mobile element positions, to several contigs difficult to process,
+for too short or polluted reads.
 
 
 ## Requirements
@@ -39,7 +49,7 @@ TB-tools needs Python 3, and the following dependencies to work:
 * *blastn* and *makeblastdb* from blast+ (NCBI) : https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
 A 'bin' directory as been added to the project with the 3 required executables, 
-and for the GNU/Linux, Mac and Windows platforms, but the prefered method is
+and for the GNU/Linux, Mac and Windows platforms, but the preferred method is
 a clean installation from the source.
 
 
