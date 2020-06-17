@@ -348,11 +348,11 @@ class TBannotator:
         self._results[self._sra]['Directory'] = self._dir
 
 
+    def _check_for_tools_new(self):
+        pass
+        
+        
     def _check_for_tools(self):
-
-        
-        
-    def _check_for_tools_old(self):
         self._logger.info('Check for fastq-dump availability')
         local_fastqdump = list(filter(lambda x:x.startswith('fastq-dump'), os.listdir()))
         if local_fastqdump != []:
