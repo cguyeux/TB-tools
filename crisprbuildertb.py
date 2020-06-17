@@ -12,6 +12,7 @@ import logging
 import logging.config
 import os.path
 import pathlib
+import shutil
 import subprocess as sp
 import sys
 
@@ -55,21 +56,30 @@ class CRISPRbuilderTB:
                             default='sequences',
                             help="directory of outputs",
                             type=str)
+        parser.add_argument("--num_threads",
+                            default='1',
+                            help="number of threads",
+                            type=str)
+        parser.add_argument("-evalue",
+                            default='1e-7',
+                            help="evalue when blasting spacers, DRs, etc.",
+                            type=str)
         args = parser.parse_args()
         logging.basicConfig(level=args.loglevel)
         self._logger = logging.getLogger()
         self._sra = args.sra
         self._output_dir = pathlib.Path(args.output_directory)
+        self._num_threads = args.num_threads
+        self._evalue = args.evalue
 
 
     def _run(self):
         self._check_for_tools()
         self._prepare_directory()
-        self._collect_sra()
-        self._prepare_sra()
+        self._collect_and_prepare_sra()
         self._make_blast_db()
         self._sequences_of_interest()
-        self._clean_directory()
+
 
 
     def _prepare_directory(self):
@@ -123,51 +133,35 @@ class CRISPRbuilderTB:
                         self._makeblastdb = 'bin/mac/./makeblastdb'
 
 
-    def _collect_sra(self):
-        """
-        Download the SRA files if needed.
-        """
-        self._sra_file_1 = self._dir / (self._sra + '_1')
-        self._sra_file_1 = self._sra_file_1.with_suffix('.fasta')
-        if not os.path.isfile(self._sra_file_1):
+    def _collect_and_prepare_sra(self):
+        self._sra_shuffled = self._dir / (self._sra + '_shuffled')
+        self._sra_shuffled = self._sra_shuffled.with_suffix('.fasta')
+        if not os.path.isfile(self._sra_shuffled):
             sp.run([self._fastq_dump,
                     '--split-files',
                     '--fasta',
                     '-O', self._dir,
                     self._sra
                     ])
-        self._sra_file_2 = self._dir / (self._sra + '_2')
-        self._sra_file_2 = self._sra_file_2.with_suffix('.fasta')
-        if not os.path.isfile(self._sra_file_1) or not os.path.isfile(self._sra_file_2):
-            raise NotImplementedError("Fasta stem suffices are not _1 and _2")
-        self._logger.warning('SRA files found in sequence directory')
-
-
-    def _prepare_sra(self):
-        """
-        Merge the two downloaded fasta files of the paired Illumina WGS data.
-        Valid only for linux or mac. For windows, we only take the first file.
-        """
         if self._linux_or_mac:
-            self._sra_shuffled = self._dir / (self._sra + '_shuffled')
-            self._sra_shuffled = self._sra_shuffled.with_suffix('.fasta')
-            if not os.path.isfile(self._sra_shuffled):
-                self._logger.debug('Renaming reads')        
-                for fic in ['_1', '_2']:
-                    sp.run(["sed",
-                            "-i", f"s/{self._sra}./{self._sra}{fic}./g",
-                            (self._dir / (self._sra + fic)).with_suffix('.fasta')
-                            ])
-                self._logger.warning('Shuffling SRA files')      
-                with open(self._sra_shuffled, "w+") as f:
-                    sp.call(["cat",
-                             self._sra_file_1,
-                             self._sra_file_2],
-                            stdout=f
-                            )
+            self._logger.debug('Renaming reads')  
+            files = [k for k in os.listdir(self._dir) 
+                     if k.startswith(self._sra) and k.endswith('.fasta')]
+            for fic in [k.lstrip(self._sra).rstrip('.fasta') for k in files]:
+                sp.run(["sed",
+                        "-i", f"s/{self._sra}./{self._sra}{fic}./g",
+                        (self._dir / (self._sra + fic)).with_suffix('.fasta')
+                        ])
+            self._logger.warning('Concatenating SRA files')   
+            files = [self._dir / k for k in files]
+            with open(self._sra_shuffled, "w+") as f:
+                sp.call(["cat", *files], stdout=f)
         else:
             self._logger.info(f'We will only use one fasta file (OS={sys.platform})')
-            self._sra_shuffled = self._sra_file_1
+            files = [k for k in os.listdir(self._dir) 
+                     if k.startswith(self._sra) and k.endswith('.fasta')]
+            files = [self._dir / k for k in files]
+            shutil.copyfile(files[0], self._sra_shuffled)
             
 
     def _make_blast_db(self):
@@ -181,34 +175,17 @@ class CRISPRbuilderTB:
 
 
     def _sequences_of_interest(self):
-        txt = ''
-        for k in dicofind:
-            txt += '>'+k
-            txt += os.linesep
-            txt += dicofind[k]
-            txt += os.linesep
-        with open('sequences.fasta','w') as f:
-            f.write(txt)
         completed = sp.run([self._blastn,
                             '-num_threads', self._num_threads,
-                            '-query', self._dir_data / 'spoligo_vitro.fasta',
-                            '-evalue', self._spol_evalue,
+                            '-query', pathlib.Path('data') / 'fastas' / 'crispr_patterns.fasta',
+                            '-evalue', self._evalue,
                             '-task', "blastn",
                             '-db', self._dir / self._sra,
                             '-outfmt',
-                            '10 qseqid sseqid sstart send qlen length score evalue',
-                            '-out', self._dir / (self._sra + '_vitro_old-spol.blast')])
+                            '10 sseqid sstart send',
+                            '-out', self._dir / (self._sra + '_crispr_patterns.blast')])
+        assert completed.returncode == 0
 
-
-completed = subprocess.run("blastn -query /tmp/interet.fasta -task blastn -evalue 1e-7 -db "+item+" -num_threads 8 -outfmt '10 sseqid sstart send' -out /tmp/"+item, shell = True)
-assert completed.returncode == 0
-
-
-    def _clean_directory(self):
-        os.remove('sequences.fasta')
-
-
-    
 
 
 if __name__ == "__main__":

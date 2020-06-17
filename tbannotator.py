@@ -486,27 +486,6 @@ class TBannotator:
                 self._blastn = './blastn'
                 self._makebastdb = './makeblastdb'
 
-
-
-    def _collect_sra(self):
-        """
-        Download the SRA files if needed.
-        """
-        self._sra_file_1 = self._dir / (self._sra + '_1')
-        self._sra_file_1 = self._sra_file_1.with_suffix('.fasta')
-        if not os.path.isfile(self._sra_file_1):
-            sp.run([self._fastq_dump,
-                    '--split-files',
-                    '--fasta',
-                    '-O', self._dir,
-                    self._sra
-                    ])
-        self._sra_file_2 = self._dir / (self._sra + '_2')
-        self._sra_file_2 = self._sra_file_2.with_suffix('.fasta')
-        if not os.path.isfile(self._sra_file_1) or not os.path.isfile(self._sra_file_2):
-            raise NotImplementedError("Fasta stem suffices are not _1 and _2")
-        self._logger.warning('SRA files found in sequence directory')
-
          
 
     def _collect_and_prepare_sra(self):
@@ -541,30 +520,6 @@ class TBannotator:
         
         
 
-    def _prepare_sra(self):
-        """
-        Merge the two downloaded fasta files of the paired Illumina WGS data.
-        Valid only for linux or mac. For windows, we only take the first file.
-        """
-        if self._linux_or_mac:
-            self._sra_shuffled = self._dir / (self._sra + '_shuffled')
-            self._sra_shuffled = self._sra_shuffled.with_suffix('.fasta')
-            if not os.path.isfile(self._sra_shuffled):
-                self._logger.debug('Renaming reads')  
-                files = [k for k in os.listdir(self._dir) 
-                         if k.startswith(self._sra) and k.endswith('.fasta')]
-                for fic in [k.lstrip(self._sra).rstrip('.fasta') for k in files]:
-                    sp.run(["sed",
-                            "-i", f"s/{self._sra}./{self._sra}{fic}./g",
-                            (self._dir / (self._sra + fic)).with_suffix('.fasta')
-                            ])
-                self._logger.warning('Shuffling SRA files')   
-                files = [self._dir / k for k in files]
-                with open(self._sra_shuffled, "w+") as f:
-                    sp.call(["cat", *files], stdout=f)
-        else:
-            self._logger.info(f'We will only use one fasta file (OS={sys.platform})')
-            self._sra_shuffled = self._sra_file_1
 
 
     def _seq_info(self):
