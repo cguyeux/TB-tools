@@ -14,7 +14,7 @@ This **README.md** gives you the gist of the TB-tools package.
 --------------------------
 
 The main objective of these tools is to provide various genotyping tools for the
-**Mycobacterium tuberculosis** complex. These tools work only for Whole Genome
+*Mycobacterium tuberculosis* complex. These tools work only for Whole Genome
 Sequencing (WGS) data, more specifically for Illumina paired end sequences.
 The choice to consider only WGS data comes from the fact that the assembled 
 genomes of *M. tuberculosis* often have many errors, either from areas difficult 
@@ -49,7 +49,21 @@ TB-tools needs the following dependencies to work:
 
 To install the required python libraries: `pip3 install -r requirements.txt`
 
-Help about this script: `python tbannotator.py -h'
+## How to use TB-tools
+----------------------
+
+To launch a first analysis: `python tbannotator.py -sra ERR037527`
+
+Help about this script: `python tbannotator.py -h`
+
+By default, only basic information (e.g., Coll et al. lineage) is printed in
+the terminal (to save execution time), and results are stored in a pickled 
+python dictionary in the 'sequence' directory. To read such a data:
+
+`from pickle import load`
+`with open('sequences/ERR037527/ERR037527.pkl', 'rb') as f:`
+`    dico = load(f.read())`
+
 
 ## Citation
 
