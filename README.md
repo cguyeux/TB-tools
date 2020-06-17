@@ -60,9 +60,9 @@ By default, only basic information (e.g., Coll et al. lineage) is printed in
 the terminal (to save execution time), and results are stored in a pickled 
 python dictionary in the 'sequence' directory. To read such a data:
 
-`from pickle import load`
-`with open('sequences/ERR037527/ERR037527.pkl', 'rb') as f:`
-`    dico = load(f.read())`
+```from pickle import load`r ''`
+```with open('sequences/ERR037527/ERR037527.pkl', 'rb') as f:`r ''`
+```    dico = load(f.read())''`
 
 
 ## Citation
