@@ -1,14 +1,42 @@
 # TB-tools
 ------------------
 
-This **README.md** gives you the gist of the CRISPRbuilder-TB package.
+This **README.md** gives you the gist of the TB-tools package.
 
-
-## Purpose of this package
+## Main content
 --------------------------
 
-- TB-annotator: Collect and annotate Mycobacterium tuberculosis whole genome sequencing data.    
+- TB-annotator: Collect and annotate Mycobacterium tuberculosis WGS data.    
 - CRISPRbuilder-TB: de novo reconstruction of the CRISPR locus of tuberculosis.
+
+
+## Purpose of the package
+--------------------------
+
+The main objective of these tools is to provide various genotyping tools for the
+**Mycobacterium tuberculosis** complex. These tools work only for Whole Genome
+Sequencing (WGS) data, more specifically for Illumina paired end sequences.
+The choice to consider only WGS data comes from the fact that the assembled 
+genomes of *M. tuberculosis* often have many errors, either from areas difficult 
+to reconstruct (e.g., CRISPR locus), multiple repeated sequences, or the use 
+of an unrepresentative strain as a reference (h37Rv).
+Both programs in this package receive either a Sequence Read Archive (SRA) 
+accession number, or a list of such SRAs in a text file (one number per line), 
+or the ID of an NCBI BioProject.
+
+**tb-annotator** is used to collect information from a given WGS *tuberculosis*
+genome. SRA files are downloaded if needed, and name of the strain, location, 
+bioproject, biosample, etc. are first collected from the NCBI server, when 
+available:  Read files are then systematically studied, to provide the following 
+information:
+ - number of reads, their length, and the mean coverage;
+ - 43-spacers based and 98-spacers based *in silico*, and *in vitro* infered, 
+ spoligotypes, plus the SIT number;
+ - lineages based on various state-of-the-art SNP collections: PGG, Coll, 
+ Palittapongarnpim (L1), Shitikov (L2), and Stucki (L4);
+ - the number and position (in h37Rv) of numerous Insertion Sequences, including
+ IS6110.
+
 
 ## Requirements
 ---------------
