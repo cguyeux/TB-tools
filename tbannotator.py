@@ -98,7 +98,7 @@ class TBannotator:
                     self._find_IS()
                 # Print a summary of results
                 self._local_summary()
-                self._summary()
+                #self._summary()
             except NotImplementedError:
                 pass
 
@@ -348,11 +348,23 @@ class TBannotator:
         self._results[self._sra]['Directory'] = self._dir
 
 
-    def _check_for_tools_new(self):
-        pass
-        
-        
     def _check_for_tools(self):
+        if distutils.spawn.find_executable("fastq-dump.exe") != None:
+            self._logger.warning('fastq-dump found in system directory')
+            self._fastq_dump = 'fastq-dump.exe'
+        elif distutils.spawn.find_executable("fastq-dump") != None:
+            self._logger.warning('fastq-dump found in system directory')
+            self._fastq_dump = 'fastq-dump'
+        else:
+            if sys.platform == 'win32':
+                self._fastq_dump = 'bin\windows\fastq-dump.exe'
+            elif sys.platform in ['linux']:
+                self._fastq_dump = 'bin/linux/./fastq-dump'
+            elif sys.platform in ['darwin']:
+                self._fastq_dump = 'bin/mac/./fastq-dump'
+        
+        
+    def _check_for_tools_old(self):
         self._logger.info('Check for fastq-dump availability')
         local_fastqdump = list(filter(lambda x:x.startswith('fastq-dump'), os.listdir()))
         if local_fastqdump != []:
