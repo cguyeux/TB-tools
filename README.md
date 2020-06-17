@@ -41,11 +41,14 @@ information:
 ## Requirements
 ---------------
 
-TB-tools needs the following dependencies to work:
+TB-tools needs Python 3, and the following dependencies to work:
 
-* python >= "3.4"
-* fastq-dump from sra-tools (NCBI) : https://github.com/ncbi/sra-tools
-* blast+ (NCBI) : https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
+* *fastq-dump* from sra-tools (NCBI) : https://github.com/ncbi/sra-tools
+* *blastn* and *makeblastdb* from blast+ (NCBI) : https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
+
+A 'bin' directory as been added to the project with the 3 required executables, 
+and for the GNU/Linux, Mac and Windows platforms, but the prefered method is
+a clean installation from the source.
 
 To install the required python libraries: 
 
