@@ -630,7 +630,7 @@ class TBannotator:
         # TODO: refactor multiple spoligo blasts
         completed = sp.run([self._blastn,
                             '-num_threads', self._num_threads,
-                            '-query', self._dir_data / 'spoligo_old.fasta',
+                            '-query', self._dir_data / 'fastas' / 'spoligo_old.fasta',
                             '-evalue', self._spol_evalue,
                             '-task', "blastn",
                             '-db', self._dir / self._sra,
@@ -640,7 +640,7 @@ class TBannotator:
         assert completed.returncode == 0
         completed = sp.run([self._blastn,
                             '-num_threads', self._num_threads,
-                            '-query', self._dir_data / 'spoligo_new.fasta',
+                            '-query', self._dir_data / 'fastas' / 'spoligo_new.fasta',
                             '-evalue', self._spol_evalue,
                             '-task', "blastn",
                             '-db', self._dir / self._sra,
@@ -652,7 +652,7 @@ class TBannotator:
             self._results[self._sra]['spoligo'+['','_new'][index]] = ''
             with open(self._dir / (self._sra + item +'-spol.blast')) as f:
                 matches = f.read()
-                nb = open(self._dir_data / ('spoligo'+item+'.fasta')).read().count('>')
+                nb = open(self._dir_data / 'fastas' / ('spoligo'+item+'.fasta')).read().count('>')
                 for k in range(1,nb+1):
                     if matches.count('espaceur'+item[1:].capitalize()+str(k)+',') >= self._spol_nbmatches:
                         self._results[self._sra]['spoligo'+['','_new'][index]] += '\u25A0'
@@ -667,7 +667,7 @@ class TBannotator:
         self._logger.info('Blast of in vitro spacers')
         completed = sp.run([self._blastn,
                             '-num_threads', self._num_threads,
-                            '-query', self._dir_data / 'spoligo_vitro.fasta',
+                            '-query', self._dir_data / 'fastas' / 'spoligo_vitro.fasta',
                             '-evalue', self._spol_evalue,
                             '-task', "blastn",
                             '-db', self._dir / self._sra,
@@ -677,7 +677,7 @@ class TBannotator:
         assert completed.returncode == 0
         completed = sp.run([self._blastn,
                             '-num_threads', self._num_threads,
-                            '-query', self._dir_data / 'spoligo_vitro_new.fasta',
+                            '-query', self._dir_data / 'fastas' / 'spoligo_vitro_new.fasta',
                             '-evalue', self._spol_evalue,
                             '-task', "blastn",
                             '-db', self._dir / self._sra,
@@ -689,7 +689,7 @@ class TBannotator:
             # Spoligo old version
             with open(self._dir / (self._sra + '_vitro_old-spol.blast')) as f:
                 matches = f.read()
-                nb = int(open(self._dir_data / 'spoligo_vitro.fasta').read().count('>')/2)
+                nb = int(open(self._dir_data / 'fastas' /  'spoligo_vitro.fasta').read().count('>')/2)
                 self._results[self._sra]['spoligo_vitro'] = ''
                 for k in range(1,nb+1):
                     if min([matches.count('espaceur_vitroOld'+str(k)+','),matches.count('espaceur_vitroBOld'+str(k)+',')])/self._results[self._sra]['coverage'] > 0.05:
@@ -701,7 +701,7 @@ class TBannotator:
             # Spoligo new version
             with open(self._dir / (self._sra + '_vitro_new-spol.blast')) as f:
                 matches = f.read()
-                nb = int(open(self._dir_data / 'spoligo_vitro_new.fasta').read().count('>')/2)
+                nb = int(open(self._dir_data / 'fastas' /  'spoligo_vitro_new.fasta').read().count('>')/2)
                 self._results[self._sra]['spoligo_vitro_new'] = ''
                 for k in range(1,nb+1):
                     if min([matches.count('espaceur_vitro_new'+str(k)+','),matches.count('espaceur_vitro_newB'+str(k)+',')])/self._results[self._sra]['coverage']>0.05:
@@ -753,7 +753,7 @@ class TBannotator:
 
     def _lineage_Coll(self):
         self._logger.info('Getting Coll lineage')
-        wb = openpyxl.load_workbook(filename = self._dir_data / 'Coll.xlsx')
+        wb = openpyxl.load_workbook(filename = self._dir_data / 'lineages' / 'Coll.xlsx')
         ws = wb['Feuil1']
         lignee = []
         self._lineage_Coll_names = []
@@ -781,7 +781,7 @@ class TBannotator:
         self._logger.info('Getting Coll complementary lineage')
         lignee = {}
         length = self._lineage_window_size
-        with open(self._dir_data / 'Coll2.txt') as f:
+        with open(self._dir_data / 'lineages' / 'Coll2.txt') as f:
             txt = f.read()
         for row in txt.split('\n')[1:-1]:
             lineage = row.split('\t')[0].lstrip('lineage')
@@ -871,7 +871,7 @@ class TBannotator:
         self._logger.info('Getting Palittapongarnpim lineage')
         length = self._lineage_window_size
         Lignee_Pali = {}
-        wb = openpyxl.load_workbook(filename =  self._dir_data / 'Palittapongarnpim.xlsx')
+        wb = openpyxl.load_workbook(filename =  self._dir_data / 'lineages' / 'Palittapongarnpim.xlsx')
         for feuille in wb.sheetnames:
             if 'lineage' in feuille:
                 fiche = wb[feuille]
@@ -907,7 +907,7 @@ class TBannotator:
         Lignee_Pali = {}
         par_lignee = {}
         length = self._lineage_window_size
-        wb = openpyxl.load_workbook(filename =  self._dir_data / 'Palittapongarnpim.xlsx')
+        wb = openpyxl.load_workbook(filename =  self._dir_data / 'lineages' / 'Palittapongarnpim.xlsx')
         for feuille in wb.sheetnames:
             if 'lineage' in feuille:
                 fiche = wb[feuille]
@@ -947,7 +947,7 @@ class TBannotator:
         """
         length = self._lineage_window_size
         Lignee_Shitikov = {}
-        wb4 = openpyxl.load_workbook(filename = self._dir_data / 'Shitikov.xlsx')
+        wb4 = openpyxl.load_workbook(filename = self._dir_data / 'lineages' / 'Shitikov.xlsx')
         fiche = wb4['Feuil1']
         for row in fiche.iter_rows(min_row=2):
             if row[1].value != None:
@@ -978,7 +978,7 @@ class TBannotator:
         """
         length = self._lineage_window_size
         Lignee_Stucki = {}
-        wb5 = openpyxl.load_workbook(filename = self._dir_data / 'Stucki.xlsx')
+        wb5 = openpyxl.load_workbook(filename = self._dir_data / 'lineages' / 'Stucki.xlsx')
         fiche = wb5['Feuil1']
         for row in fiche.iter_rows(min_row=2):
             if row[1].value != None:
