@@ -47,23 +47,33 @@ TB-tools needs the following dependencies to work:
 * fastq-dump from sra-tools (NCBI) : https://github.com/ncbi/sra-tools
 * blast+ (NCBI) : https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
-To install the required python libraries: `pip3 install -r requirements.txt`
+To install the required python libraries: 
+
+<pre>
+pip3 install -r requirements.txt
+</pre>
+
 
 ## How to use TB-tools
 ----------------------
 
-To launch a first analysis: `python tbannotator.py -sra ERR037527`
-
-Help about this script: `python tbannotator.py -h`
-
+To launch a first analysis: 
+<pre>
+python tbannotator.py -sra ERR037527
+</pre>
+Help about this script: 
+<pre>
+python tbannotator.py -h
+</pre>
 By default, only basic information (e.g., Coll et al. lineage) is printed in
 the terminal (to save execution time), and results are stored in a pickled 
-python dictionary in the 'sequence' directory. To read such a data:
-
-```from pickle import load`r ''`
-```with open('sequences/ERR037527/ERR037527.pkl', 'rb') as f:`r ''`
-```    dico = load(f.read())''`
-
+python dictionary in the 'sequence' directory. To read such a data using 
+Python:
+<pre>
+from pickle import load
+with open('sequences/ERR037527/ERR037527.pkl', 'rb') as f:
+    dico = load(f.read())
+</pre>
 
 ## Citation
 
