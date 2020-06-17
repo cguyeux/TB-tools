@@ -68,6 +68,8 @@ class CRISPRbuilderTB:
         self._collect_sra()
         self._prepare_sra()
         self._make_blast_db()
+        self._sequences_of_interest()
+        self._clean_directory()
 
 
     def _prepare_directory(self):
@@ -176,6 +178,37 @@ class CRISPRbuilderTB:
                                 '-title', self._sra,
                                 '-out', self._dir / self._sra])
             assert completed.returncode == 0
+
+
+    def _sequences_of_interest(self):
+        txt = ''
+        for k in dicofind:
+            txt += '>'+k
+            txt += os.linesep
+            txt += dicofind[k]
+            txt += os.linesep
+        with open('sequences.fasta','w') as f:
+            f.write(txt)
+        completed = sp.run([self._blastn,
+                            '-num_threads', self._num_threads,
+                            '-query', self._dir_data / 'spoligo_vitro.fasta',
+                            '-evalue', self._spol_evalue,
+                            '-task', "blastn",
+                            '-db', self._dir / self._sra,
+                            '-outfmt',
+                            '10 qseqid sseqid sstart send qlen length score evalue',
+                            '-out', self._dir / (self._sra + '_vitro_old-spol.blast')])
+
+
+completed = subprocess.run("blastn -query /tmp/interet.fasta -task blastn -evalue 1e-7 -db "+item+" -num_threads 8 -outfmt '10 sseqid sstart send' -out /tmp/"+item, shell = True)
+assert completed.returncode == 0
+
+
+    def _clean_directory(self):
+        os.remove('sequences.fasta')
+
+
+    
 
 
 if __name__ == "__main__":
