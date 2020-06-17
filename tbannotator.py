@@ -66,8 +66,7 @@ class TBannotator:
                 self._sra = sra
                 self._results[self._sra] = {}
                 self._prepare_directory()
-                self._collect_sra()
-                self._prepare_sra()
+                self._collect_and_prepare_sra()
                 self._seq_info()
                 #self._ncbi_info()
                 self._make_blast_db()
@@ -320,7 +319,7 @@ class TBannotator:
 
     def _read_h37Rv(self):
         self._logger.info('Reading h37Rv reference genome')
-        self._h37Rv = Bio.SeqIO.read(self._dir_data / 'NC_000962.3.fasta',
+        self._h37Rv = Bio.SeqIO.read(self._dir_data / 'fastas' / 'NC_000962.3.fasta',
                                      'fasta')                         
 
 
@@ -509,6 +508,37 @@ class TBannotator:
         self._logger.warning('SRA files found in sequence directory')
 
          
+
+    def _collect_and_prepare_sra(self):
+        self._sra_shuffled = self._dir / (self._sra + '_shuffled')
+        self._sra_shuffled = self._sra_shuffled.with_suffix('.fasta')
+        if not os.path.isfile(self._sra_shuffled):
+            sp.run([self._fastq_dump,
+                    '--split-files',
+                    '--fasta',
+                    '-O', self._dir,
+                    self._sra
+                    ])
+        if self._linux_or_mac:
+            self._logger.debug('Renaming reads')  
+            files = [k for k in os.listdir(self._dir) 
+                     if k.startswith(self._sra) and k.endswith('.fasta')]
+            for fic in [k.lstrip(self._sra).rstrip('.fasta') for k in files]:
+                sp.run(["sed",
+                        "-i", f"s/{self._sra}./{self._sra}{fic}./g",
+                        (self._dir / (self._sra + fic)).with_suffix('.fasta')
+                        ])
+            self._logger.warning('Concatenating SRA files')   
+            files = [self._dir / k for k in files]
+            with open(self._sra_shuffled, "w+") as f:
+                sp.call(["cat", *files], stdout=f)
+        else:
+            self._logger.info(f'We will only use one fasta file (OS={sys.platform})')
+            files = [k for k in os.listdir(self._dir) 
+                     if k.startswith(self._sra) and k.endswith('.fasta')]
+            files = [self._dir / k for k in files]
+            shutil.copyfile(files[0], self._sra_shuffled)
+        
         
 
     def _prepare_sra(self):
@@ -520,19 +550,18 @@ class TBannotator:
             self._sra_shuffled = self._dir / (self._sra + '_shuffled')
             self._sra_shuffled = self._sra_shuffled.with_suffix('.fasta')
             if not os.path.isfile(self._sra_shuffled):
-                self._logger.debug('Renaming reads')        
-                for fic in ['_1', '_2']:
+                self._logger.debug('Renaming reads')  
+                files = [k for k in os.listdir(self._dir) 
+                         if k.startswith(self._sra) and k.endswith('.fasta')]
+                for fic in [k.lstrip(self._sra).rstrip('.fasta') for k in files]:
                     sp.run(["sed",
                             "-i", f"s/{self._sra}./{self._sra}{fic}./g",
                             (self._dir / (self._sra + fic)).with_suffix('.fasta')
                             ])
-                self._logger.warning('Shuffling SRA files')      
+                self._logger.warning('Shuffling SRA files')   
+                files = [self._dir / k for k in files]
                 with open(self._sra_shuffled, "w+") as f:
-                    sp.call(["cat",
-                             self._sra_file_1,
-                             self._sra_file_2],
-                            stdout=f
-                            )
+                    sp.call(["cat", *files], stdout=f)
         else:
             self._logger.info(f'We will only use one fasta file (OS={sys.platform})')
             self._sra_shuffled = self._sra_file_1

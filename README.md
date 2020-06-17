@@ -8,7 +8,7 @@
 
 The main objective of these tools is to provide various genotyping tools for the
 *Mycobacterium tuberculosis* complex. These tools work only for Whole Genome
-Sequencing (WGS) data, more specifically for Illumina paired end sequences.
+Sequencing (WGS) data in fasta files.
 The choice to consider only WGS data comes from the fact that the assembled 
 genomes of *M. tuberculosis* often have many errors, either from areas difficult 
 to reconstruct (e.g., CRISPR locus), multiple repeated sequences, or the use 
