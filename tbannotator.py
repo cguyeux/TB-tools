@@ -116,7 +116,7 @@ class TBannotator:
         
     def _parse_args(self):
         """
-        Parses the arguments provided to the TB-profiler
+        Parses the arguments provided to the TB-annotator
         """
         parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
         parser.add_argument("-sra",
@@ -261,8 +261,6 @@ class TBannotator:
                             default=20,
                             help="size of the prefix in front of the IS",
                             type=int)
-
-        # TODO: valeurs par défaut dans l'aide
         args = parser.parse_args()
         logging.basicConfig(level=args.loglevel)
         self._logger = logging.getLogger()
@@ -312,7 +310,8 @@ class TBannotator:
         id_sras = dico['eSearchResult']['IdList']['Id']
         self.sras = []
         for k in id_sras:
-            ret = Bio.Entrez.efetch(db="sra", id=k, retmode="xml")
+            ret = Bio.Entrez.efetch(db="sra", id=k, 
+                                    retmode="xml", retmax = 10000)
             dico = xmltodict.parse(ret.read())
             self.sras.append(dico['EXPERIMENT_PACKAGE_SET']['EXPERIMENT_PACKAGE']['EXPERIMENT']['@accession'])
             time.sleep(1)
@@ -349,19 +348,45 @@ class TBannotator:
 
 
     def _check_for_tools(self):
-        if distutils.spawn.find_executable("fastq-dump.exe") != None:
-            self._logger.warning('fastq-dump found in system directory')
-            self._fastq_dump = 'fastq-dump.exe'
-        elif distutils.spawn.find_executable("fastq-dump") != None:
-            self._logger.warning('fastq-dump found in system directory')
-            self._fastq_dump = 'fastq-dump'
-        else:
-            if sys.platform == 'win32':
-                self._fastq_dump = 'bin\windows\fastq-dump.exe'
-            elif sys.platform in ['linux']:
-                self._fastq_dump = 'bin/linux/./fastq-dump'
-            elif sys.platform in ['darwin']:
-                self._fastq_dump = 'bin/mac/./fastq-dump'
+        for name in ['fastq-dump', 'blastn', 'makeblastdb']:
+            if distutils.spawn.find_executable(f"{name}.exe") != None:
+                self._logger.warning(f'{name} found in system directory')
+                if name == 'fastq-dump':
+                    self._fastq_dump = 'fastq-dump.exe'
+                elif name == 'blastn':
+                    self._blastn = 'blastn.exe'
+                else:
+                    self._makeblastdb = 'makeblastdb.exe'
+            elif distutils.spawn.find_executable(name) != None:
+                self._logger.warning(f'{name} found in system directory')
+                if name == 'fastq-dump':
+                    self._fastq_dump = 'fastq-dump'
+                elif name == 'blastn':
+                    self._blastn = 'blastn'
+                else:
+                    self._makeblastdb = 'makeblastdb'
+            else:
+                if sys.platform == 'win32':
+                    if name == 'fastq-dump':
+                        self._fastq_dump = 'bin\windows\fastq-dump.exe'
+                    elif name == 'blastn':
+                        self._blastn = 'bin\windows\blastn.exe'
+                    else:
+                        self._makeblastdb = 'bin\windows\makeblastdb.exe'
+                elif sys.platform == 'linux':
+                    if name == 'fastq-dump':
+                        self._fastq_dump = 'bin/linux/./fastq-dump'
+                    elif name == 'blastn':
+                        self._blastn = 'bin/linux/./blastn'
+                    else:
+                        self._makeblastdb = 'bin/linux/./makeblastdb'
+                elif sys.platform in ['darwin']:
+                    if name == 'fastq-dump':
+                        self._fastq_dump = 'bin/mac/./fastq-dump'
+                    elif name == 'blastn':
+                        self._blastn = 'bin/mac/./blastn'
+                    else:
+                        self._makeblastdb = 'bin/mac/./makeblastdb'
         
         
     def _check_for_tools_old(self):
