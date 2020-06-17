@@ -57,6 +57,8 @@ class TBannotator:
 
 
     def _run(self):
+        if 'bioproject' in self._results:
+            self.__bioproject_to_sra()
         for sra in self.sras:
             try:
                 self._check_for_tools()
@@ -67,7 +69,7 @@ class TBannotator:
                 self._collect_sra()
                 self._prepare_sra()
                 self._seq_info()
-                self._ncbi_info()
+                #self._ncbi_info()
                 self._make_blast_db()
                 # Blasts of in silico/vitro spoligotypes
                 self._blast_spoligo()
@@ -124,6 +126,10 @@ class TBannotator:
         parser.add_argument("-list",
                             "--sra_list",
                             help="SRA list in text file, one per line",
+                            default='',
+                            type=str)
+        parser.add_argument("-bioproject",
+                            help="NCBI BioProject ID where to find SRAs",
                             default='',
                             type=str)
         parser.add_argument('-d',
@@ -260,15 +266,19 @@ class TBannotator:
         args = parser.parse_args()
         logging.basicConfig(level=args.loglevel)
         self._logger = logging.getLogger()
-        if args.sra == "" and args.sra_list == "":
-            sys.exit("No SRA found. Either 'sra' or 'list' arguments must be provided.")
-        if args.sra != "" and args.sra_list != "":
+        if args.sra == "" and args.sra_list == "" and args.bioproject == "":
+            sys.exit("No SRA found. Either 'sra', 'bioproject' or 'list' arguments must be provided.")
+        if (args.sra != "" and args.sra_list != "")\
+            or (args.sra != "" and args.bioproject != "")\
+            or (args.bioproject != "" and args.sra_list != ""):
             sys.exit("Ambiguous arguments: only one of the arguments 'sra' and 'list_sra' can be passed. ")
         if args.sra != "":
             self.sras = [args.sra]
-        else:
+        elif args.list != "":
             with open(args.sra_list) as f:
                 self.sras = f.read().split(os.linesep)
+        else:
+            self._results['bioproject'] = args.bioproject
         self.sras = [k for k in self.sras if k != '']
         self._output_dir = pathlib.Path(args.output_directory)
         self._output_dict = args.output_dict
@@ -292,6 +302,22 @@ class TBannotator:
         self._IS_prefix_size = args.IS_prefix_size
 
 
+
+    def __bioproject_to_sra(self):
+        self._logger.info(f"Collecting SRAs from bioproject{self._results['bioproject']}")
+        ret = Bio.Entrez.esearch(db="sra",
+                                 term=self._results['bioproject'],
+                                 retmode="xml")
+        dico = xmltodict.parse(ret.read())
+        id_sras = dico['eSearchResult']['IdList']['Id']
+        self.sras = []
+        for k in id_sras:
+            ret = Bio.Entrez.efetch(db="sra", id=k, retmode="xml")
+            dico = xmltodict.parse(ret.read())
+            self.sras.append(dico['EXPERIMENT_PACKAGE_SET']['EXPERIMENT_PACKAGE']['EXPERIMENT']['@accession'])
+            time.sleep(1)
+    
+    
 
     def _read_h37Rv(self):
         self._logger.info('Reading h37Rv reference genome')
@@ -502,8 +528,10 @@ class TBannotator:
 
     def _ncbi_info(self):
         # TODO: biosample
-        for key in ['bioproject', 'center', 'date', 'location', 'name', 'strain', 'study', 'taxid']:
+        for key in ['center', 'date', 'location', 'name', 'strain', 'study', 'taxid']:
             self._results[self._sra][key] = ''
+        if 'bioproject' not in self._results:
+            self._results['bioproject'] = ''
         Bio.Entrez.email = ""
         ret = Bio.Entrez.efetch(db="sra", id=self._sra, retmode="xml")
         dico = xmltodict.parse(ret.read())
