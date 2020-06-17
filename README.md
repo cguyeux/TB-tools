@@ -1,18 +1,10 @@
 # TB-tools
-------------------
-
-This **README.md** gives you the gist of the TB-tools package.
-
-## Main content
---------------------------
-
-- TB-annotator: Collect and annotate Mycobacterium tuberculosis WGS data.    
-- CRISPRbuilder-TB: de novo reconstruction of the CRISPR locus of tuberculosis
-(coming soon).
-
 
 ## Purpose of the package
---------------------------
+
+- TB-annotator: Collect and annotate *Mycobacterium tuberculosis* WGS data.    
+- CRISPRbuilder-TB: de novo reconstruction of the CRISPR locus of *tuberculosis*
+(coming soon).
 
 The main objective of these tools is to provide various genotyping tools for the
 *Mycobacterium tuberculosis* complex. These tools work only for Whole Genome
@@ -38,8 +30,8 @@ information:
  - the number and position (in h37Rv) of numerous Insertion Sequences, including
  IS6110.
 
+
 ## Requirements
----------------
 
 TB-tools needs Python 3, and the following dependencies to work:
 
@@ -50,8 +42,8 @@ A 'bin' directory as been added to the project with the 3 required executables,
 and for the GNU/Linux, Mac and Windows platforms, but the prefered method is
 a clean installation from the source.
 
+
 ## Installation
----------------
 
 You can either download a zip file by clicking on the 'Clone or download' green
 button, or clone the repository by writing in a terminal:
@@ -64,8 +56,8 @@ To install the required python libraries:
 pip3 install -r requirements.txt
 </pre>
 
+
 ## How to use TB-tools
-----------------------
 
 To launch a first analysis: 
 <pre>
